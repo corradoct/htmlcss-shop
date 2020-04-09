@@ -1,0 +1,53 @@
+/* Regole generali */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#main-wrapper{
+  width: 1000px;
+  margin: 0 auto;
+}
+
+#main-wrapper > div{
+  margin: 15px 0;
+}
+
+/* Fine regole generali */
+
+/* Regole content */
+.item{
+  position: relative;
+  display: inline-block;
+}
+
+.item > .sale{
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: green;
+}
+
+.item > .low-sale{
+  background: red;
+}
+
+.hearts{
+  width: 100%;
+  display: none;
+  position: absolute;
+  bottom: 15px;
+  text-align: center;
+  color: red;
+  font-size: 30px;
+}
+
+.item:hover > .hearts{
+  display: block;
+}
+
+.item .hearts > a{
+  text-decoration: none;
+  color: red;
+}
